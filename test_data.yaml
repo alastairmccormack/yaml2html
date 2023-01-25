@@ -1,0 +1,18 @@
+entries:
+- name: Banana Man
+  phone:
+  - '+441234'
+  address:
+    lines:
+    - 29 Acacia Road
+    - Nuttytown
+    post_code: BA7 2AN
+- name: Sherlock Holmes
+  phone:
+  - '+4412345678'
+  address:
+    lines:
+    - 221B Baker Street
+    - Camden Town
+    - London
+    post_code: NW1 6XE

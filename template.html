@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Directory</title>
+</head>
+<body>
+
+{% markdown %}
+# The Directory
+Some brilliant text
+
+| Name        | Phone       | Address |
+| ----------- | ----------- | ------- |
+{% for item in directory.entries %}| {{ item.name }} | {{ item.phone[0] }} | {% for line in item.address.lines %}{{line}}<br>{% endfor %}{{item.address.post_code}} |
+{% endfor %}
+
+{% endmarkdown %}
+
+
+</body>
+</html>
