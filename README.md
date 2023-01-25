@@ -8,14 +8,18 @@ and pydantic-yaml!
 ### `y2h.py`
 Aka YAML-to-HTML.
 
-Takes test_data.yaml, loads `template.html` and spits out `output.html`, then load `output.html`
-in your favourite browser.
+Takes test_data.yaml, loads `simple-template.html` and `bootstrap-template.html`, then spits out 
+`simple.html` and `bootstrap.html`.
 
-### `example.html`
+### `simple.html`
 
 Here's one I made earlier
 
-### `template.html`
+### `bootstrap.html`
+
+An example using the Bootstrap framework for quick stylung. Slightly more complex.
+
+### `simple-template.html`
 A Jinja2 template https://jinja.palletsprojects.com/en/3.1.x/templates/. Entries are available using the 
 `directory.entries` property.
 
@@ -58,6 +62,6 @@ Rather than freestyling the YAML, the models define the schema.
 ### Run
 
 1. Run ```python3 y2h.py```
-2. Open `output.html` in a browser
+2. Open `simple.html` or `bootstrap.html` in a browser
     
 

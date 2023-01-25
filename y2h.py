@@ -13,9 +13,8 @@ jinja_env = Environment(
 
 jinja_env.add_extension(MarkdownExtension)
 
-template = jinja_env.get_template("template.html")
-
-html = template.render(directory=directory)
-
-with open('example.html', 'w', encoding='utf-8') as html_f:
-    html_f.write(html)
+for template_name in ['simple', 'bootstrap']:
+    template = jinja_env.get_template(f'{template_name}-template.html')
+    html = template.render(directory=directory)
+    with open(f'{template_name}.html', 'w', encoding='utf-8') as html_f:
+        html_f.write(html)
